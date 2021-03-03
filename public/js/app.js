@@ -17,7 +17,7 @@ console.log('My first serverside javascript');
         //console.log(data.error))
     }
     else{
-        console.log(data);
+     
         one.textContent=data.location
         two.textContent=data.temp
         console.log(data.location);

@@ -11,7 +11,7 @@ let forecast=(lat,long,callBack)=>{
 
         }
         else{
-            callBack(undefined,`${current.weather_descriptions[0]}. It is currently ${current.temperature} degrees out. It feels like ${response.body.current.feelslike} degrees out`)
+            callBack(undefined, `At ${current.observation_time} the weather description is ${current.weather_descriptions[0]} and the humidity is ${current.humidity}. It is currently ${current.temperature} degrees out. It feels like ${response.body.current.feelslike} degrees out`)
         }
     })
 

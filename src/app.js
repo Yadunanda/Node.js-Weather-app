@@ -66,12 +66,13 @@ app.get('/weather',(req,res)=>{
       if(error){
           return res.send({errormessage:error});
       }
+      
       res.send({
         location:response.location,
         temp:data,
         address:req.query.address
     })
-    console.log(response.location);
+    console.log(response);
     console.log(data);
   })
 
