@@ -9,7 +9,7 @@ console.log('My first serverside javascript');
     let x=search.value
      one.textContent='Loading'
      two.textContent=''
-    fetch(`http://localhost:3000/weather?address=${x}`)
+    fetch(`/weather?address=${x}`)
 .then((response)=>{
     
     response.json().then((data)=>{if(data.errormessage){

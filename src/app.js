@@ -13,6 +13,7 @@ const app=express()
 let publicDirectoryPath=path.join(__dirname,'../public')
 let viewsPath=path.join(__dirname, '../templates/views')
 let partialsPath=path.join(__dirname,'../templates/partials')
+let port = process.env.PORT || 3000
 console.log(partialsPath);
 
 
@@ -87,4 +88,4 @@ app.get('*',(req,res)=>{res.render('error',{messageone:"Page not found-normal er
 //app/help
 //app.com/about   //the domain app .com all of it is going to run on a single server
 
-app.listen(3000,()=>{console.log("Hi this is yadunanda's server in port 3000")})
+app.listen(port,()=>{console.log("Hi this is yadunanda's server in port 3000")})
